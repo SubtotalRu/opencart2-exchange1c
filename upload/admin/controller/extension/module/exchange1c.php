@@ -2253,7 +2253,7 @@ class ControllerExtensionModuleExchange1c extends Controller {
 		if (empty($size)) {
 			return 0;
 		}
-		$type = $size{strlen($size)-1};
+		$type = $size[strlen($size)-1];
 		if (!is_numeric($type)) {
 			$size = (integer)$size;
 			switch ($type) {
