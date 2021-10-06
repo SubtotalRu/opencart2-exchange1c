@@ -974,7 +974,7 @@
 								<?php echo $html_delete_double_url_alias; ?>
 							</div>
 							<div class="form-group">
-								<?php echo $html_remove_unised_manufacturers; ?>
+								<?php echo $html_remove_unused_manufacturers; ?>
 							</div>
 						</fieldset>
 					</div><!-- tab-service -->
@@ -1106,7 +1106,7 @@
 		</div><!-- panel panel-default -->
 	</div><!-- container-fluid  -->
 	<div style="text-align:center; opacity: .5">
-		<p>Version <?php echo $version; ?> | <a href=https://github.com/KirilLoveVE/opencart2-exchange1c><?php echo $lang['text_source_code']; ?></a> | <a href=http://tesla-chita.ru/export/exchange1c.php?module=export>Last version available</a><br />
+		<p>Version <?php echo $version; ?> | <a href="https://github.com/SubtotalRu/opencart2-exchange1c/"><?php echo $lang['text_source_code']; ?></a> | <a href="https://github.com/SubtotalRu/opencart2-exchange1c/releases">Last version available</a><br />
 		<?php echo $lang['text_change']; ?></p>
 	</div>
 </div><!-- content -->
@@ -1449,11 +1449,11 @@ $('#exchange1c-button-delete_double_url_alias').on('click', function() {
 	}
 });
 
-$('#exchange1c-button-remove_unised_manufacturers').on('click', function() {
+$('#exchange1c-button-remove_unused_manufacturers').on('click', function() {
 	$('#form-clean').remove();
 	if (confirm('<?php echo $lang['text_confirm'] ?>')) {
 		$.ajax({
-			url: 'index.php?route=extension/module/exchange1c/manualRemoveUnisedManufacturers&token=<?php echo $token; ?>',
+			url: 'index.php?route=extension/module/exchange1c/manualRemoveUnusedManufacturers&token=<?php echo $token; ?>',
 			type: 'post',
 			dataType: 'json',
 			data: new FormData($('#form-clean')[0]),
@@ -1484,11 +1484,11 @@ $('#exchange1c-button-remove_unised_manufacturers').on('click', function() {
 	}
 });
 
-$('#exchange1c-button-remove_unised_units').on('click', function() {
+$('#exchange1c-button-remove_unused_units').on('click', function() {
 	$('#form-clean').remove();
 	if (confirm('<?php echo $lang['text_confirm'] ?>')) {
 		$.ajax({
-			url: 'index.php?route=extension/module/exchange1c/manualRemoveUnisedUnits&token=<?php echo $token; ?>',
+			url: 'index.php?route=extension/module/exchange1c/manualRemoveUnusedUnits&token=<?php echo $token; ?>',
 			type: 'post',
 			dataType: 'json',
 			data: new FormData($('#form-clean')[0]),

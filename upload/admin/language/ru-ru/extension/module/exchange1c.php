@@ -1,6 +1,6 @@
 <?php
 // Заголовок
-$_['heading_title']										= 'Обмен данными с 1C v8.x (Tesla-Chita)';
+$_['heading_title']										= 'Обмен данными с 1C v8.x';
 
 // Общие текстовые надписи
 $_['text_confirm']										= 'Вы уверены?';
@@ -761,13 +761,13 @@ $_['entry_delete_double_url_alias']						= 'Удалить все дублиру
 $_['text_button_delete_double_url_alias']				= 'Удалить дубли SEO URL';
 $_['desc_delete_double_url_alias']						= 'Сканирует все товары и SEO URL у каждого, если у товара найдено более 1 записи, то удаляются все записи кроме последней, при сканировании URL применяется сортировка по полю KEYWORD';
 
-$_['entry_remove_unised_manufacturers']					= 'Удалить неиспользуемых производителей';
-$_['text_button_remove_unised_manufacturers']			= 'Удалить неисп-мых производителей';
-$_['desc_remove_unised_manufacturers']					= 'Если производитель не указан ни в одном товаре, он будет удален, также будут удалены все его связи с УС.';
+$_['entry_remove_unused_manufacturers']					= 'Удалить неиспользуемых производителей';
+$_['text_button_remove_unused_manufacturers']			= 'Удалить неисп-мых производителей';
+$_['desc_remove_unused_manufacturers']					= 'Если производитель не указан ни в одном товаре, он будет удален, также будут удалены все его связи с УС.';
 
-$_['entry_remove_unised_units']							= 'Удалить неиспользуемые единицы';
-$_['text_button_remove_unised_units']					= 'Удалить неисп-мые единицы';
-$_['desc_remove_unised_units']							= 'Если единица не указана ни в одном товаре, она будет удалена.';
+$_['entry_remove_unused_units']							= 'Удалить неиспользуемые единицы';
+$_['text_button_remove_unused_units']					= 'Удалить неисп-мые единицы';
+$_['desc_remove_unused_units']							= 'Если единица не указана ни в одном товаре, она будет удалена.';
 
 //////////////////////////// СПРАВКА ////////////////////////////
 
